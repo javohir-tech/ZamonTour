@@ -1,0 +1,15 @@
+.button{
+    background-color: rgb(34,179,193);
+    color: #fff;
+    border:0
+}
+
+.button p{
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+}
+
+.button:hover{
+   opacity: 0.8;
+}

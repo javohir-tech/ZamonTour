@@ -1,0 +1,55 @@
+
+.suggestion-card{
+    width: 435px;
+    height: 200px;
+    border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px;
+}
+
+.suggestion-card__img img{
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.suggestion-card__info{
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 23px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
+    right: 0;
+    top: 50%;
+}
+
+.card-city{
+    font-weight: 700;
+    color: #2a2a2a;
+}
+
+.city-summa{
+    color: #22b3c1;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.suggest-card__users p, .suggest-card__users svg{
+    font-size: 1rem;
+    color: #afafaf;
+    font-weight: 400;
+}
+
+.suggest-card__users svg{
+    font-size: 1.25rem;
+}
+
+.suggest-card__list li{
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #afafaf;
+    list-style: none;
+}
+
+.main-li p{
+    font-weight: 600;
+    color: #2a2a2a;
+}

@@ -1,0 +1,76 @@
+.slide-item__1{
+    background: url(../../Photes/istanbul.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover; 
+    height: 100vh;
+    background-position: center;
+    height: 650px;
+}
+
+.slide-item__2{
+    background: url(../../Photes/Antalya.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover; 
+    height: 100vh;
+    background-position: center;
+    height: 650px;
+}
+
+.slide-item__3{
+    background: url(../../Photes/dubai.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover; 
+    height: 100vh;
+    background-position: center;
+    height: 650px;
+}
+
+.slide-item__4{
+    background: url(../../Photes/misr.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover; 
+    height: 100vh;
+    background-position: center;
+    height: 650px;
+}
+
+.slide-item__title{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 1.25rem;
+}
+
+.slide-item__city{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.more-info__item svg{   
+    color: rgb(34,179,193);
+    margin-right: 20px;
+}
+
+.more-item__description{
+    font-size: 1rem;
+    color: #afafaf;
+    font-weight: 400;
+}
+
+.more-item__number{
+    font-weight: 700;
+    line-height: 1.75rem;
+    color: rgb(34,179,193);
+}
+
+.more-info{
+    background-color: #fff;
+    margin-top: 4.5em;
+    border-radius: 50rem;
+}

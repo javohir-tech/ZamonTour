@@ -1,0 +1,40 @@
+.navbar-section{
+    background-color: #22B3C1;
+    height: 80px;
+}
+
+.navbar-title, .navbar-subtitle {
+    color: #18354A;
+}
+
+.navbar-title{
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.navbar-subtitle{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-link{
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 8px 15px;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active{
+    color: #fff ;
+}
+
+.nav-link:hover{
+    color: #ddd ;
+}
+
+.social_media svg{
+    color: #fff;
+    font-size: 0.9rem;
+}
