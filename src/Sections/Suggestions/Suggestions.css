@@ -1,0 +1,50 @@
+.suggestion-card__swiper img{
+    width: auto;
+    height: auto;
+}
+
+.suggestion-card__swiper{
+    background: none;
+}
+
+/* App.css yoki kerakli CSS fayli */
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: #22b3c1; /* Orqa fon rangi */
+    border-radius: 50%; /* Tugmalarni dumaloq qilish */
+    width: 46px; /* Tugmalar kengligi */
+    height: 46px; /* Tugmalar balandligi */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -200px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 16px; /* Tugma ichidagi belgilar kattaligi */
+    color: white; /* Tugma ichidagi belgilar rangi */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: #22b3c1;
+    opacity: 0.9; /* Tugmalarni ustiga kursor kelganda orqa fon rangi */
+}
+
+.suggestions-info__title{
+    margin-bottom: 20px;
+    line-height: 2.25rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #2a2a2a;
+}
+
+.suggestions-info__subtitle{
+    font-size: 1rem;
+    line-height: 1.75rem;
+    color: #afafaf;
+}
+
+

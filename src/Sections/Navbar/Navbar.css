@@ -1,21 +1,12 @@
 .navbar-section{
     background-color: #22B3C1;
     height: 80px;
+    top: 0;
+    width: 100vw;
 }
 
-.navbar-title, .navbar-subtitle {
-    color: #18354A;
-}
-
-.navbar-title{
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-.navbar-subtitle{
-    font-size: 1rem;
-    font-weight: 500;
+.navbar-img{
+    width: 240px;
 }
 
 .nav-link{
@@ -36,5 +27,12 @@
 
 .social_media svg{
     color: #fff;
+    box-sizing: border-box;
     font-size: 0.9rem;
+}
+
+.navbar-collapse{
+    background-color: #22B3C1;
+    width: 100vw;
+    margin-top: 0;
 }

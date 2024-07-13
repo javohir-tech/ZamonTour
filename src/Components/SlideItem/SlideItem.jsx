@@ -15,7 +15,7 @@ export default function SlideItem({ city, population, territory, price, banner})
         <h1 className='slide-item__city'>{city}</h1>
         <Button text='Borishni Xohlaysizmi?' />
         {/* Users */}
-        <div className='more-info px-5 py-4 row g-3 justify-content-between align-items-center'>
+        <div className='more-info px-5 py-4 row g-5 justify-content-between align-items-center'>
           <div className='col col-md-6 col-xl-3 d-flex align-items-center more-info__item mt-0 text-start'>
             <span className='d-inline'>
               <PersonCircle size={42} />
@@ -43,7 +43,7 @@ export default function SlideItem({ city, population, territory, price, banner})
               <h4 className='mb-0 more-item__number'>{price}</h4>
             </span>
           </div>
-          <div className='col col-md-6 col-xl-3 d-flex justify-content-center mt-0 text-start'>
+          <div className='col col-md-6 col-xl-3 mb-3 d-flex justify-content-center mt-0 text-start'>
             <Button text='Ko`proq Bilish...' />
           </div>
         </div>

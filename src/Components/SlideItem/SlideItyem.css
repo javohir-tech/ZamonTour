@@ -1,5 +1,5 @@
 .slide-item__1{
-    background: url(../../Photes/istanbul.jpg);
+    background: url(../../Photes/istanbul-wallpaper.jpg);
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover; 
@@ -9,7 +9,7 @@
 }
 
 .slide-item__2{
-    background: url(../../Photes/Antalya.jpg);
+    background: url(../../Photes/antalya-wallpaper.jpg);
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover; 
@@ -19,7 +19,7 @@
 }
 
 .slide-item__3{
-    background: url(../../Photes/dubai.jpg);
+    background: url(../../Photes/dubai-wallpaper.jpg);
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover; 
@@ -29,7 +29,7 @@
 }
 
 .slide-item__4{
-    background: url(../../Photes/misr.jpg);
+    background: url(../../Photes/sharm.jpg);
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover; 
@@ -46,9 +46,10 @@
 }
 
 .slide-item__city{
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 3.5rem;
+    font-weight: 800;
     color: #fff;
+    letter-spacing: 0.5px;
     margin-bottom: 2rem;
 }
 

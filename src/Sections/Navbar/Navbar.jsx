@@ -2,18 +2,17 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './Navbar.css'
-
+import brand from '../../Photes/zamon.svg'
 
 function NavbarZamon() {
     return (
-        <Navbar expand="lg" className="navbar-section">
+        <Navbar expand="lg" className="navbar-section position-relative">
             <Container>
                 <Navbar.Brand href="#home">
-                    <h3 className='mb-0 navbar-title'>Zamon</h3>
-                    <p className='mb-0 navbar-subtitle'>business travel</p>
+                    <img src={brand} alt="navbar-img" className='navbar-img' />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Collapse id="basic-navbar-nav" className='z-3 navbar-collapse'>
                     <Nav className="mx-auto">
                         <Nav.Link className='nav-link mx-2' href="#home">Bosh Sahifa</Nav.Link>
                         <Nav.Link className='nav-link mx-2' href="#about">Biz haqimizda</Nav.Link>
