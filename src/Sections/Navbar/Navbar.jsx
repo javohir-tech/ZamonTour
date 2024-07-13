@@ -6,7 +6,7 @@ import brand from '../../Photes/zamon.svg'
 
 function NavbarZamon() {
     return (
-        <Navbar expand="lg" className="navbar-section position-relative">
+        <Navbar expand="lg" className="navbar-section">
             <Container>
                 <Navbar.Brand href="#home">
                     <img src={brand} alt="navbar-img" className='navbar-img' />
