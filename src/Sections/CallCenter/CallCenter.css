@@ -1,0 +1,44 @@
+.reservation-form{
+    margin-top: 100px;
+}
+
+.reservation-form__under{
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border-bottom-right-radius: 23px;
+    border-bottom-left-radius: 23px;
+}
+
+.reservation-form iframe{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+}
+
+.form-box h4{
+    display: inline;
+    margin-right: 5px;
+    font-size: 30px;
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+.balck{
+    color: #2a2a2a;
+}
+
+.blue{
+    color: #22b3c1;
+}
+
+label{
+    color: #afafaf;
+    font-size: 1.1rem;
+}
+
+@media(max-width:400px){
+    .reservation-form{
+        margin-top: 400px;
+    }
+}

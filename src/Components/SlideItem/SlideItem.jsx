@@ -13,7 +13,7 @@ export default function SlideItem({ city, population, territory, price, banner})
         {/* Banner */}
         <h2 className='slide-item__title mt-5 pt-5'>Siz yoqtirib qolishingiz aniq bo'lgan shahar:</h2>
         <h1 className='slide-item__city'>{city}</h1>
-        <Button text='Borishni Xohlaysizmi?' />
+        <Button text='Borishni Xohlaysizmi?' style={'button px-3 py-2 button_3'} />
         {/* Users */}
         <div className='more-info px-5 py-4 row g-5 justify-content-between align-items-center'>
           <div className='col col-md-6 col-xl-3 d-flex align-items-center more-info__item mt-0 text-start'>
@@ -44,7 +44,7 @@ export default function SlideItem({ city, population, territory, price, banner})
             </span>
           </div>
           <div className='col col-md-6 col-xl-3 mb-3 d-flex justify-content-center mt-0 text-start'>
-            <Button text='Ko`proq Bilish...' />
+            <Button text='Ko`proq Bilish...' style={'button px-3 py-2 button_1'} />
           </div>
         </div>
       </div>

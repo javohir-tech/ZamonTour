@@ -16,7 +16,7 @@ export default function BiletCard({card2__img, card2__title, card2__subtitle, ca
                             <h4>{card2__title}</h4>
                             <p className='bilet-header__subtitle'>{card2__subtitle}</p>
                         </span>
-                        <Button text={'Ko\'proq bilish'} />
+                        <Button text={'Ko\'proq bilish'} style={'button px-3 py-2 button_1'} />
                     </div>
                     <div className='bilet-card__description'>
                         <p>

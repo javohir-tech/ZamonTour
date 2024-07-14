@@ -11,6 +11,8 @@ import BiletSection from './Sections/BiletSection/BiletSection';
 import Cityes from './Sections/Cityes/Cityes';
 import Carousel from './Sections/WebGuild/WebGuild';
 import Best from './Sections/Best/Best';
+import Contacts from './Sections/Contacts/Contacts';
+import CallCenter from './Sections/CallCenter/CallCenter';
 
 
 function App() {
@@ -19,19 +21,23 @@ function App() {
   return (
     <>
       {/* Navbar */}
-      <NavbarZamon/>
+      <NavbarZamon />
       {/* main section */}
-      <MainSection/>
+      <MainSection />
       {/* Suggestions section */}
-      <Suggestions/>
+      <Suggestions />
       {/* Visa Help Section */}
-      <VisaHelpSection/>
+      <VisaHelpSection />
       {/* bilet section */}
-      <BiletSection/>
+      <BiletSection />
       {/* cityes section */}
-      <Cityes/>
+      <Cityes />
       {/* slide with web guild */}
-       <Best/>
+      <Best />
+      {/* Contacts section */}
+      <Contacts />
+      {/* Map and form */}
+      <CallCenter/>
     </>
   )
 }

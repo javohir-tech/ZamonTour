@@ -1,0 +1,71 @@
+.contacts-section{
+    background: url('../../Photes/heading-bg-02.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 15rem ;
+    padding-bottom: 8rem;
+}
+
+.contacts-content h3{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+    padding-bottom: 1.5rem;
+}
+
+.contacts-content h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.contacts-card{
+    width: 400px;
+    padding: 20px 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+}
+
+.contacts-card svg{
+    color: #22b3c1;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contacts-card-type h4{
+    color: #2a2a2a;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.contacts-card-adress a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #22b3c1;
+    letter-spacing: 0.5px;
+}
+
+.under-line{
+    width: 128px;
+    height: 2px;
+    border: 2px solid #afafaf;
+    left: -64px;
+    top: -16px;
+}
+
+@media (max-width:400px){
+
+    .contacts-section{
+        padding-top: 8rem;
+        padding-bottom: 6rem;
+    }
+
+    .contacts-card{
+        width: auto;
+    }
+}
