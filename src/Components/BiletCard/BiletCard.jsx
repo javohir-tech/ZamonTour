@@ -40,7 +40,7 @@ export default function BiletCard({card2__img, card2__title, card2__subtitle, ca
                             </div>
                             <hr />
                             <div className='card-footer'>
-                                <a href="">Qiziqmi? <ArrowRight/></a>
+                                <a href="">{t('strelka')}<ArrowRight/></a>
                             </div>
                         </div>
                     </div>

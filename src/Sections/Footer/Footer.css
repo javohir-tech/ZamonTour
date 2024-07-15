@@ -1,0 +1,39 @@
+.footer-box{
+    background: url(../../Photes/footer-img.jpg);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+
+.footer-title{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.footer-subtitle{
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.footer-under__text{
+    background-color: #38BDCE;
+}
+
+.footer-under__text p, .footer-under__text a{
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.3s ease-in;
+}
+
+.footer-under__text a{
+    text-decoration: none;
+}
+
+.footer-under__text a:hover{
+    color: #ddd;
+}

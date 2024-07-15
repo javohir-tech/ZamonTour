@@ -2,6 +2,7 @@ import React from 'react';
 import './WebGuild.css'; // CSS faylini import qilish
 import SectionHeader from '../../Components/SectionHeader/SectionHeader';
 import { ArrowsFullscreen } from 'react-bootstrap-icons';
+import { useTranslation } from 'react-i18next';
 
 const Slide = ({ id, icon, title, description, checked }) => (
   <>
@@ -19,39 +20,40 @@ const Slide = ({ id, icon, title, description, checked }) => (
 );
 
 const Carousel = () => {
+   const {t} = useTranslation()
   return (
     <div className="wrapper container">
       <div className="slide-container">
         <Slide
           id="c1"
           icon={<ArrowsFullscreen/>}
-          title="Antalya"
-          description="Aholisi: 3.5M"
+          title={t('antalya')}
+          description={t('slide-card__antalya')}
           checked={true}
         />
         <Slide
           id="c2"
           icon={<ArrowsFullscreen/>}
-          title="Dubai"
-          description="Aholisi: 2M"
+          title={t('dubai')}
+          description={t('slide-card__dubai')}
         />
         <Slide
           id="c3"
           icon={<ArrowsFullscreen/>}
-          title="Istanbul"
-          description="Aholisi: 4.1M"
+          title={t('istanbul')}
+          description={t('slide-card__antalya')}
         />
         <Slide
           id="c4"
           icon={<ArrowsFullscreen/>}
-          title="Sharm El-Shaikh"
-          description="Aholisi: 4M"
+          title={t('sharm')}
+          description={t('slide-card__sharm')}
         />
         <Slide
           id="c5"
           icon={<ArrowsFullscreen/>}
-          title="India"
-          description="Aholisi: 3M"
+          title={t('india')}
+          description={t('slide-card__india')}
         />
       </div>
     </div>

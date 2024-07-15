@@ -13,6 +13,7 @@ import Carousel from './Sections/WebGuild/WebGuild';
 import Best from './Sections/Best/Best';
 import Contacts from './Sections/Contacts/Contacts';
 import CallCenter from './Sections/CallCenter/CallCenter';
+import Footer from './Sections/Footer/Footer';
 
 
 function App() {
@@ -38,6 +39,8 @@ function App() {
       <Contacts />
       {/* Map and form */}
       <CallCenter />
+      {/* footer section */}
+      <Footer/>
     </>
   )
 }

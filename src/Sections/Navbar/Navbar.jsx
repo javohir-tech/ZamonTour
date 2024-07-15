@@ -17,7 +17,7 @@ function NavbarZamon() {
         i18n.changeLanguage(selectedLanguage)
     }
     return (
-        <Navbar expand="lg" className="navbar-section position-fixed w-100">
+        <Navbar expand="lg" className="navbar-section">
             <Container>
                 <Navbar.Brand href="#home">
                     <img src={brand} alt="navbar-img" className='navbar-img' />
@@ -30,7 +30,7 @@ function NavbarZamon() {
                         <Nav.Link className='nav-link mx-2' href="#tours">{t('tours')}</Nav.Link>
                         <Nav.Link className='nav-link mx-2' href="#contacts">{t('contacts')}</Nav.Link>
                     </Nav>
-                    <div className='social_media d-flex align-items-center'>
+                    <div className='social_media d-flex align-items-center p-3'>
                         <Form.Select aria-label="Default select example" onChange={handleChange} value={language}>
                             <option value="uz">uzbek</option>
                             <option value="en">english</option>
