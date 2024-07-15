@@ -13,8 +13,10 @@ import './MainSection.css';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import SlideItem from '../../Components/SlideItem/SlideItem';
+import { useTranslation } from 'react-i18next';
 
 export default function MainSection() {
+    const {t} = useTranslation()
     return (
         <>
             <Swiper
@@ -31,10 +33,10 @@ export default function MainSection() {
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"
             >
-                <SwiperSlide><SlideItem banner={'slide-item__1'} city={'Istanbul'} population={'44.48 M'} territory={'275.400 KM2'} price={'$946.000'}/></SwiperSlide>
-                <SwiperSlide><SlideItem banner={'slide-item__2'} city={'Antalya'}  population={'8.66M'} territory={'41.290 KM2'} price={'$1.100.200'}/></SwiperSlide>
-                <SwiperSlide><SlideItem banner={'slide-item__3'} city={'Dubai'}  population={'67.41 M'} territory={' 551.500 KM2'} price={'$425.600'}/></SwiperSlide>
-                <SwiperSlide><SlideItem banner={'slide-item__4'} city={'Sharm El-Sheikh'}  population={'69.86 M'} territory={'513.120 KM2'} price={'$165.450'}/></SwiperSlide>
+                <SwiperSlide><SlideItem banner={'slide-item__1'} city={t('istanbul')} population={'44.48 M'} territory={'275.400 KM2'} price={'$946.000'}/></SwiperSlide>
+                <SwiperSlide><SlideItem banner={'slide-item__2'} city={t('antalya')}  population={'8.66M'} territory={'41.290 KM2'} price={'$1.100.200'}/></SwiperSlide>
+                <SwiperSlide><SlideItem banner={'slide-item__3'} city={t('dubai')}  population={'67.41 M'} territory={' 551.500 KM2'} price={'$425.600'}/></SwiperSlide>
+                <SwiperSlide><SlideItem banner={'slide-item__4'} city={t('sharm')}  population={'69.86 M'} territory={'513.120 KM2'} price={'$165.450'}/></SwiperSlide>
             </Swiper>
         </>
     )

@@ -3,10 +3,21 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './Navbar.css'
 import brand from '../../Photes/zamon.svg'
+import { useTranslation } from 'react-i18next';
+import { Form } from 'react-bootstrap';
 
 function NavbarZamon() {
+    const { t, i18n } = useTranslation();
+    const language = localStorage.getItem('i18nextLng')
+
+    const handleChange = (e) =>{
+        e.preventDefault();
+
+        const selectedLanguage = e.target.value;
+        i18n.changeLanguage(selectedLanguage)
+    }
     return (
-        <Navbar expand="lg" className="navbar-section">
+        <Navbar expand="lg" className="navbar-section position-fixed w-100">
             <Container>
                 <Navbar.Brand href="#home">
                     <img src={brand} alt="navbar-img" className='navbar-img' />
@@ -14,12 +25,17 @@ function NavbarZamon() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className='z-3 navbar-collapse'>
                     <Nav className="mx-auto">
-                        <Nav.Link className='nav-link mx-2' href="#home">Bosh Sahifa</Nav.Link>
-                        <Nav.Link className='nav-link mx-2' href="#about">Biz haqimizda</Nav.Link>
-                        <Nav.Link className='nav-link mx-2' href="#tours">Turlar</Nav.Link>
-                        <Nav.Link className='nav-link mx-2' href="#contacts">Kontaktlar</Nav.Link>
+                        <Nav.Link className='nav-link mx-2' href="#home">{t('home')}</Nav.Link>
+                        <Nav.Link className='nav-link mx-2' href="#about">{t('about')}</Nav.Link>
+                        <Nav.Link className='nav-link mx-2' href="#tours">{t('tours')}</Nav.Link>
+                        <Nav.Link className='nav-link mx-2' href="#contacts">{t('contacts')}</Nav.Link>
                     </Nav>
-                    <div className='social_media'>
+                    <div className='social_media d-flex align-items-center'>
+                        <Form.Select aria-label="Default select example" onChange={handleChange} value={language}>
+                            <option value="uz">uzbek</option>
+                            <option value="en">english</option>
+                            <option value="ru">russian</option>
+                        </Form.Select>
                         <span className='mx-2'>
                             <a href="https://t.me/Javohir_Suvonov" target='_blank'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
@@ -38,7 +54,7 @@ function NavbarZamon() {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-        
+
     );
 }
 

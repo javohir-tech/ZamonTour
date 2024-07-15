@@ -2,8 +2,11 @@ import React from 'react'
 import Button from '../Button/Button'
 import './BiletCard.css'
 import { ArrowRight, GlobeCentralSouthAsia, HouseFill, Person, PersonFill } from 'react-bootstrap-icons'
+import { useTranslation } from 'react-i18next'
 
 export default function BiletCard({card2__img, card2__title, card2__subtitle, card2__description, seeOrNotSee, population, area, summa}) {
+
+    const {t} = useTranslation()
     return (
         <div>
             <div className="row py-4">
@@ -16,7 +19,7 @@ export default function BiletCard({card2__img, card2__title, card2__subtitle, ca
                             <h4>{card2__title}</h4>
                             <p className='bilet-header__subtitle'>{card2__subtitle}</p>
                         </span>
-                        <Button text={'Ko\'proq bilish'} style={'button px-3 py-2 button_1'} />
+                        <Button text={t('button_2')} style={'button px-3 py-2 button_1'} />
                     </div>
                     <div className='bilet-card__description'>
                         <p>

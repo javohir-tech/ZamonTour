@@ -22,14 +22,17 @@ import 'swiper/css/pagination';
 // import required modules
 import { Autoplay, Navigation, } from 'swiper/modules';
 // boootstrap icons
-import { AirplaneFill, BuildingFill, CarFrontFill, Check2, Check2Square, CheckCircleFill, Stopwatch, StopwatchFill, Wallet2, WalletFill } from 'react-bootstrap-icons';
+import { CheckCircleFill, StopwatchFill, WalletFill } from 'react-bootstrap-icons';
+import { useTranslation } from 'react-i18next'
 
 
 export default function VisaHelpSection() {
+
+    const { t } = useTranslation()
     return (
         <div className='container'>
             {/* section header */}
-            <SectionHeader infoTitle={'Viza Olishga Yordam Beramiz'} infoSubtile={'Biz sizga oson, tez fursatda va albatta ishonchli viza olishga yordam beramiz.'} textPosition={'text-center mb-5'} />
+            <SectionHeader infoTitle={t('visa-help-title')} infoSubtile={t('visa-help-subtitle')} textPosition={'text-center mb-5'} />
             {/* slide with cards */}
             <Swiper
                 slidesPerView={1}
@@ -53,13 +56,13 @@ export default function VisaHelpSection() {
                 modules={[Autoplay, Navigation]}
                 className="mySwiper"
             >
-                <SwiperSlide className='suggestion-card__swiper'><SuggestionsCard images={saudi} city={'Saudiya Arabistoni'} clients={'234 kishi ro\'yhatdan o\'tganlar'} cardTitle={'Bizning xizmatlar o\'z ichiga oladi'} cardIcon_1={<WalletFill className='me-2' />} cardItem_1={'Eng arzon narxlar'} cardIcon_2={<StopwatchFill className='me-2' />} cardItem_2={'Tezkor ishlash vaqti'} cardIcon_3={<CheckCircleFill className='me-2' />} cardItem_3={'Ishonchli yordam'} /></SwiperSlide>
-                <SwiperSlide className='suggestion-card__swiper'><SuggestionsCard images={omon} city={'Omon'} clients={'234 kishi ro\'yhatdan o\'tganlar'} cardTitle={'Bizning xizmatlar o\'z ichiga oladi'} cardIcon_1={<WalletFill className='me-2' />} cardItem_1={'Eng arzon narxlar'} cardIcon_2={<StopwatchFill className='me-2' />} cardItem_2={'Tezkor ishlash vaqti'} cardIcon_3={<CheckCircleFill className='me-2' />} cardItem_3={'Ishonchli yordam'} /></SwiperSlide>
-                <SwiperSlide className='suggestion-card__swiper'><SuggestionsCard images={china} city={'Xitoy'} clients={'234 kishi ro\'yhatdan o\'tganlar'} cardTitle={'Bizning xizmatlar o\'z ichiga oladi'} cardIcon_1={<WalletFill className='me-2' />} cardItem_1={'Eng arzon narxlar'} cardIcon_2={<StopwatchFill className='me-2' />} cardItem_2={'Tezkor ishlash vaqti'} cardIcon_3={<CheckCircleFill className='me-2' />} cardItem_3={'Ishonchli yordam'} /></SwiperSlide>
-                <SwiperSlide className='suggestion-card__swiper'><SuggestionsCard images={hongkong} city={'Xong Kong'} clients={'234 kishi ro\'yhatdan o\'tganlar'} cardTitle={'Bizning xizmatlar o\'z ichiga oladi'} cardIcon_1={<WalletFill className='me-2' />} cardItem_1={'Eng arzon narxlar'} cardIcon_2={<StopwatchFill className='me-2' />} cardItem_2={'Tezkor ishlash vaqti'} cardIcon_3={<CheckCircleFill className='me-2' />} cardItem_3={'Ishonchli yordam'} /></SwiperSlide>
-                <SwiperSlide className='suggestion-card__swiper'><SuggestionsCard images={ovropa} city={'Yevropa (Shengen)'} clients={'234 kishi ro\'yhatdan o\'tganlar'} cardTitle={'Bizning xizmatlar o\'z ichiga oladi'} cardIcon_1={<WalletFill className='me-2' />} cardItem_1={'Eng arzon narxlar'} cardIcon_2={<StopwatchFill className='me-2' />} cardItem_2={'Tezkor ishlash vaqti'} cardIcon_3={<CheckCircleFill className='me-2' />} cardItem_3={'Ishonchli yordam'} /></SwiperSlide>
-                <SwiperSlide className='suggestion-card__swiper'><SuggestionsCard images={india} city={'Hindiston'} clients={'234 kishi ro\'yhatdan o\'tganlar'} cardTitle={'Bizning xizmatlar o\'z ichiga oladi'} cardIcon_1={<WalletFill className='me-2' />} cardItem_1={'Eng arzon narxlar'} cardIcon_2={<StopwatchFill className='me-2' />} cardItem_2={'Tezkor ishlash vaqti'} cardIcon_3={<CheckCircleFill className='me-2' />} cardItem_3={'Ishonchli yordam'} /></SwiperSlide>
-                <SwiperSlide className='suggestion-card__swiper'><SuggestionsCard images={japan} city={'Yaponiya'} clients={'234 kishi ro\'yhatdan o\'tganlar'} cardTitle={'Bizning xizmatlar o\'z ichiga oladi'} cardIcon_1={<WalletFill className='me-2' />} cardItem_1={'Eng arzon narxlar'} cardIcon_2={<StopwatchFill className='me-2' />} cardItem_2={'Tezkor ishlash vaqti'} cardIcon_3={<CheckCircleFill className='me-2' />} cardItem_3={'Ishonchli yordam'} /></SwiperSlide>
+                <SwiperSlide className='suggestion-card__swiper'><SuggestionsCard images={saudi} city={t('saudi')}       clients={t('clients_2')} cardTitle={t('card-title__2')} cardIcon_1={<WalletFill className='me-2' />} cardItem_1={t('summa-2')} cardIcon_2={<StopwatchFill className='me-2' />} cardItem_2={t('fastTime')} cardIcon_3={<CheckCircleFill className='me-2' />} cardItem_3={t('help')} /></SwiperSlide>
+                <SwiperSlide className='suggestion-card__swiper'><SuggestionsCard images={omon} city={t('omon')}         clients={t('clients_2')} cardTitle={t('card-title__2')} cardIcon_1={<WalletFill className='me-2' />} cardItem_1={t('summa-2')} cardIcon_2={<StopwatchFill className='me-2' />} cardItem_2={t('fastTime')} cardIcon_3={<CheckCircleFill className='me-2' />} cardItem_3={t('help')} /></SwiperSlide>
+                <SwiperSlide className='suggestion-card__swiper'><SuggestionsCard images={china} city={t('china')}       clients={t('clients_2')} cardTitle={t('card-title__2')} cardIcon_1={<WalletFill className='me-2' />} cardItem_1={t('summa-2')} cardIcon_2={<StopwatchFill className='me-2' />} cardItem_2={t('fastTime')} cardIcon_3={<CheckCircleFill className='me-2' />} cardItem_3={t('help')} /></SwiperSlide>
+                <SwiperSlide className='suggestion-card__swiper'><SuggestionsCard images={hongkong} city={t('kongkong')} clients={t('clients_2')} cardTitle={t('card-title__2')} cardIcon_1={<WalletFill className='me-2' />} cardItem_1={t('summa-2')} cardIcon_2={<StopwatchFill className='me-2' />} cardItem_2={t('fastTime')} cardIcon_3={<CheckCircleFill className='me-2' />} cardItem_3={t('help')} /></SwiperSlide>
+                <SwiperSlide className='suggestion-card__swiper'><SuggestionsCard images={ovropa} city={t('ovropa')}     clients={t('clients_2')} cardTitle={t('card-title__2')} cardIcon_1={<WalletFill className='me-2' />} cardItem_1={t('summa-2')} cardIcon_2={<StopwatchFill className='me-2' />} cardItem_2={t('fastTime')} cardIcon_3={<CheckCircleFill className='me-2' />} cardItem_3={t('help')} /></SwiperSlide>
+                <SwiperSlide className='suggestion-card__swiper'><SuggestionsCard images={india} city={t('india')}       clients={t('clients_2')} cardTitle={t('card-title__2')} cardIcon_1={<WalletFill className='me-2' />} cardItem_1={t('summa-2')} cardIcon_2={<StopwatchFill className='me-2' />} cardItem_2={t('fastTime')} cardIcon_3={<CheckCircleFill className='me-2' />} cardItem_3={t('help')} /></SwiperSlide>
+                <SwiperSlide className='suggestion-card__swiper'><SuggestionsCard images={japan} city={t('japan')}       clients={t('clients_2')} cardTitle={t('card-title__2')} cardIcon_1={<WalletFill className='me-2' />} cardItem_1={t('summa-2')} cardIcon_2={<StopwatchFill className='me-2' />} cardItem_2={t('fastTime')} cardIcon_3={<CheckCircleFill className='me-2' />} cardItem_3={t('help')} /></SwiperSlide>
             </Swiper>
         </div>
     )
