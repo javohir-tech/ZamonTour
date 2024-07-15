@@ -1,6 +1,7 @@
 import React from 'react'
 import './CallCenter.css'
 import { Form } from 'react-bootstrap'
+import Button from '../../Components/Button/Button'
 
 export default function CallCenter() {
     const persons = [
@@ -77,6 +78,7 @@ export default function CallCenter() {
             visaItem:'India'
         },
     ]
+    
     return (
         <div className='container border reservation-form py-5'>
             <div>
@@ -139,6 +141,9 @@ export default function CallCenter() {
                                         ))}
                                     </Form.Select>
                                 </Form.Group>
+                            </div>
+                            <div className='col-12'>
+                                        <Button text={'Band Qilish'} style={'button px-3 py-2 button_1 w-100'} />
                             </div>
                         </div>
                     </Form>

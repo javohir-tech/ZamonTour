@@ -1,5 +1,6 @@
 import React from 'react'
 import './Button.css'
+import { NavbarBrand } from 'react-bootstrap'
 
 export default function Button({text, style}) {
   return (
