@@ -88,6 +88,15 @@ export default function CallCenter() {
     const [adress2, setAdress2] = useState('');
     const [adress3, setAdress3] = useState('');
 
+    const yangila = (e) => {
+        setName("");
+        setPhone("");
+        setPeoples("");
+        setDay("");
+        setAdress2("");
+        setAdress3("")
+    }
+// 
     const handleSubmit = async (e) => {
         e.preventDefault(); // Formni odatiy yuborilishini oldini olish
 
@@ -120,6 +129,7 @@ export default function CallCenter() {
 
             if (response.ok) {
                 alert('Message sent!');
+                yangila()
             } else {
                 const errorData = await response.json();
                 console.error('Error sending message:', errorData);
@@ -151,13 +161,13 @@ export default function CallCenter() {
                             <div className='col-md-6 col-12 '>
                                 <Form.Group className="mb-3">
                                     <Form.Label>{t('name')}</Form.Label>
-                                    <Form.Control className='rounded-pill py-2' placeholder="Suvonov Javohir" value={name} onChange={(e) => setName(e.target.value)}required />
+                                    <Form.Control className='rounded-pill py-2' placeholder="Suvonov Javohir" value={name} onChange={(e) => setName(e.target.value)} required />
                                 </Form.Group>
                             </div>
                             <div className='col-md-6 col-12 '>
                                 <Form.Group className="mb-3">
                                     <Form.Label>{t('phone')}</Form.Label>
-                                    <Form.Control className='rounded-pill py-2' placeholder="+998 99 004 52 24" value={phone} onChange={(e) => setPhone(e.target.value)} required/>
+                                    <Form.Control className='rounded-pill py-2' placeholder="+998 99 004 52 24" value={phone} onChange={(e) => setPhone(e.target.value)} required />
                                 </Form.Group>
                             </div>
                             <div className='col-md-6 col-12 '>
@@ -173,15 +183,15 @@ export default function CallCenter() {
                             <div className='col-md-6 col-12 '>
                                 <Form.Group className="mb-3">
                                     <Form.Label>{t('day')}</Form.Label>
-                                    <Form.Control className='rounded-pill py-2' placeholder="DD.MM.YYYY"  value={day}  onChange={(e) => setDay(e.target.value)} required/>
+                                    <Form.Control className='rounded-pill py-2' placeholder="DD.MM.YYYY" value={day} onChange={(e) => setDay(e.target.value)} required />
                                 </Form.Group>
                             </div>
                             <div className='col-12 '>
                                 <Form.Group className="mb-3">
                                     <Form.Label>{t('adress_2')}</Form.Label>
                                     <Form.Select className='rounded-pill py-2'
-                                    value={adress2}
-                                    onChange={(e) => setAdress2(e.target.value)} required>
+                                        value={adress2}
+                                        onChange={(e) => setAdress2(e.target.value)} required>
                                         {countries.map((item, index) => (
                                             <option value={index}>{item?.countriy}</option>
                                         ))}
@@ -191,7 +201,7 @@ export default function CallCenter() {
                             <div className='col-12 '>
                                 <Form.Group className="mb-3">
                                     <Form.Label>{t('adress_3')}</Form.Label>
-                                    <Form.Select className='rounded-pill py-2'value={adress3} onChange={(e) => setAdress3(e.target.value)} required>
+                                    <Form.Select className='rounded-pill py-2' value={adress3} onChange={(e) => setAdress3(e.target.value)} required>
                                         {visa.map((item, index) => (
                                             <option value={index}>{item?.visaItem}</option>
                                         ))}
