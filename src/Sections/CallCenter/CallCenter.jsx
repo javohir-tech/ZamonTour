@@ -4,6 +4,8 @@ import { Form } from 'react-bootstrap'
 import Button from '../../Components/Button/Button'
 import { use } from 'i18next'
 import { useTranslation } from 'react-i18next'
+import Modal from 'react-bootstrap/Modal';
+import { SendFill, TelephoneForward, TelephoneForwardFill } from 'react-bootstrap-icons'
 
 export default function CallCenter() {
     const persons = [
@@ -80,6 +82,11 @@ export default function CallCenter() {
             visaItem: 'India'
         },
     ]
+    //modal js
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
@@ -96,7 +103,7 @@ export default function CallCenter() {
         setAdress2("");
         setAdress3("")
     }
-// 
+    // 
     const handleSubmit = async (e) => {
         e.preventDefault(); // Formni odatiy yuborilishini oldini olish
 
@@ -128,7 +135,7 @@ export default function CallCenter() {
             });
 
             if (response.ok) {
-                alert('Message sent!');
+                handleShow()
                 yangila()
             } else {
                 const errorData = await response.json();
@@ -154,6 +161,12 @@ export default function CallCenter() {
                 </iframe>
                 <div className='form-box'>
                     <Form onSubmit={handleSubmit}>
+                        <Modal show={show} onHide={handleClose}>
+                            <Modal.Header closeButton>
+                                <Modal.Title>Malumotlar Yuborildi  <SendFill/></Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body>Sizga tez orada aloqaga chiqamiz <TelephoneForwardFill/></Modal.Body>
+                        </Modal>
                         <div className='row g-4 justify-content-between reservation-form__under'>
                             <div className='col-12'>
                                 <h1 className='text-center mt-3 d-none'><h4 className='black'>O'z</h4><h4 className='blue'>joyingizni</h4><h4 className='black'>band</h4><h4 className='blue'>qiling</h4></h1>
