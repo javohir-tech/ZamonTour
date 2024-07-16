@@ -52,7 +52,7 @@ export default function Suggestions() {
                 slidesPerView: 1,
               },
             }}
-            navigation={false}
+            navigation={true}
             modules={[Autoplay, Navigation]}
             className="mySwiper"
           >
