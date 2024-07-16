@@ -8,8 +8,8 @@ export default function BiletCard({card2__img, card2__title, card2__subtitle, ca
 
     const {t} = useTranslation()
     return (
-        <div>
-            <div className="row py-4">
+        <div id='about'>
+            <div className="row py-4" >
                 <div className="col-12 col-xl-4">
                     <img src={card2__img} className='img-fluid bilet-card__img' alt="transport img" />
                 </div>
@@ -19,7 +19,7 @@ export default function BiletCard({card2__img, card2__title, card2__subtitle, ca
                             <h4>{card2__title}</h4>
                             <p className='bilet-header__subtitle'>{card2__subtitle}</p>
                         </span>
-                        <Button text={t('button_2')} style={'button px-3 py-2 button_1'} />
+                        <Button text={t('button_2')} style={'button px-3 py-2 button_1'} window={'#contacts'}/>
                     </div>
                     <div className='bilet-card__description'>
                         <p>

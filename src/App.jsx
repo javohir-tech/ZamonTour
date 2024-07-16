@@ -14,10 +14,16 @@ import Best from './Sections/Best/Best';
 import Contacts from './Sections/Contacts/Contacts';
 import CallCenter from './Sections/CallCenter/CallCenter';
 import Footer from './Sections/Footer/Footer';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 
 function App() {
   const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <>
@@ -40,7 +46,7 @@ function App() {
       {/* Map and form */}
       <CallCenter />
       {/* footer section */}
-      <Footer/>
+      <Footer />
     </>
   )
 }

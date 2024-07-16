@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ContactsCard({ icon, type, adress }) {
+export default function ContactsCard({ icon, type, adress, href }) {
     return (
         <div>
             <div className='contacts-card text-center mb-3'>
@@ -11,7 +11,7 @@ export default function ContactsCard({ icon, type, adress }) {
                     <h4>{type}</h4>
                 </div>
                 <div className='contacts-card-adress'>
-                    <p><a href="">{adress}</a></p>
+                    <p><a href={href}>{adress}</a></p>
                 </div>
             </div>
         </div>

@@ -20,3 +20,13 @@
 .plan p{
     width: 45%;
 }
+
+@media (max-width: 400px){
+        .plan h2{
+            width: 100% !important;
+        }
+
+        .plan p{
+            width: 100%;
+        }
+}

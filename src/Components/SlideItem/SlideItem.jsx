@@ -14,7 +14,7 @@ export default function SlideItem({ city, population, territory, price, banner})
         {/* Banner */}
         <h2 className='slide-item__title mt-5 pt-5'>{t('main-section__description')}</h2>
         <h1 className='slide-item__city'>{city}</h1>
-        <Button text={t('button_1')} style={'button px-3 py-2 button_3'} />
+        <Button text={t('button_1')} style={'button px-3 py-2 button_3'} window={'#contacts'}/>
         {/* Users */}
         <div className='more-info px-5 py-4 row g-5 justify-content-between align-items-center'>
           <div className='col col-md-6 col-xl-3 d-flex align-items-center more-info__item mt-0 text-start'>
@@ -45,7 +45,7 @@ export default function SlideItem({ city, population, territory, price, banner})
             </span>
           </div>
           <div className='col col-md-6 col-xl-3 mb-3 d-flex justify-content-center mt-0 text-start'>
-            <Button text={t('button_2')} style={'button px-3 py-2 button_1'} />
+            <Button text={t('button_2')} style={'button px-3 py-2 button_1'} window={'#contacts'} />
           </div>
         </div>
       </div>

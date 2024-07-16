@@ -32,7 +32,7 @@ export default function SuggestionsCard({ city, summa, clients, images, clientsT
             </ul>
           </div>
           <div className='text-start'>
-            <Button text={t('button_3')} style={'button px-3 py-2 button_1'}/>
+            <Button text={t('button_3')} style={'button px-3 py-2 button_1'} window={'#contacts'}/>
           </div>
         </div>
       </div>

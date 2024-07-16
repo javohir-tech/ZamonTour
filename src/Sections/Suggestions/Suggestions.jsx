@@ -31,7 +31,7 @@ import { useTranslation } from 'react-i18next';
 export default function Suggestions() {
   const {t} = useTranslation()
   return (
-    <div className="container py-5">
+    <div className="container py-5" id='tours'>
       <div className='suggestions-section py-5'>
         {/* section header */}
         <SectionHeader infoTitle={t('suggestions-section__title')} infoSubtile={t('suggestions-section__subtitle')} textPosition={'text-center mb-5'}/>

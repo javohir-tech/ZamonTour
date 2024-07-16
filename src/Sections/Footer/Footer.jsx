@@ -16,7 +16,7 @@ export default function Footer() {
                                 <h3 className='footer-subtitle mb-3'>{t('footer-subtitle')}</h3>
                             </div>
                             <div>
-                                <Button text={t('footer-button')} style={'button_3 button px-3 py-2'} />
+                                <Button text={t('footer-button')} style={'button_3 button px-3 py-2'} window={'#contacts'} />
                             </div>
                         </div>
                     </div>

@@ -12,6 +12,12 @@
     font-size: 1rem;
 }
 
+.button a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease-in;
+}
+
 .button_1{
     background-color: rgb(34,179,193);
     color: #fff;
@@ -31,6 +37,14 @@
     background-color: rgb(34,179,193);
 }
 
+.button_2 a{
+    color: rgb(34,179,193);
+}
+
+.button_2:hover a{
+    color: #fff;
+}
+
 .button_3{
     background-color: rgb(34,179,193);
     color: #fff;
@@ -39,4 +53,8 @@
 .button_3:hover{
     background-color: #fff;
     color: rgb(34,179,193);
+}
+
+.button_3:hover a{
+ color: rgb(34,179,193);
 }
