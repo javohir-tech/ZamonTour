@@ -25,9 +25,6 @@ export default function MainSection() {
                     delay: 10000,
                     disableOnInteraction: false,
                 }}
-                pagination={{
-                    clickable: true,
-                }}
                 id='home'
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
