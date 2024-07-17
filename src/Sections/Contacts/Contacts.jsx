@@ -18,7 +18,7 @@ export default function Contacts() {
                         </span>
                         <h1>{t('contacts-section-subtitle')}</h1>
                         <Button text={t('button_2')} style={'button px-3 py-2 button_2'} window={'#contacts'}/>
-                        <div className='contacts-cards d-flex flex-column flex-md-row g-5 text-center justify-content-between mt-5 position-absolute w-100'>
+                        <div className='contacts-cards d-flex flex-column flex-xl-row g-5 text-center justify-content-between mt-5 position-absolute w-100'>
                             <ContactsCard icon={<TelephoneFill />} type={t('telefon')} adress={'+998 90 007 29 04'} href={'tel:+998900072904'}/>
                             <ContactsCard icon={<EnvelopeFill />} type={t('email')} adress={'suvonovjavohir625@gmail.com'} href={'mailto:suvonovjavohir625@gmail.com'}/>
                             <ContactsCard icon={<GeoAltFill />} type={t('adress')} adress={'15/25, Chilanzar - 9, Tashkent city'} href={'chilanzar'}/>

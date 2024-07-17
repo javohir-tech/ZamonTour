@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function ContactsCard({ icon, type, adress, href }) {
     return (
-        <div>
+        <div className='contacts-section__box'>
             <div className='contacts-card text-center mb-3'>
                 <div className='contacts-card-icon'>
                     <span>{icon}</span>

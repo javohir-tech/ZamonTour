@@ -69,3 +69,13 @@
         width: auto;
     }
 }
+
+@media(max-width:996px){
+    .contacts-section{
+        margin-bottom: 320px;
+    }
+
+    .contacts-section__box{
+       margin: auto;
+    }
+}
