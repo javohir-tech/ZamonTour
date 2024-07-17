@@ -63,6 +63,7 @@
     .contacts-section{
         padding-top: 8rem;
         padding-bottom: 6rem;
+        margin-bottom: 100px;
     }
 
     .contacts-card{
@@ -72,7 +73,7 @@
 
 @media(max-width:996px){
     .contacts-section{
-        margin-bottom: 320px;
+        margin-bottom: 300px;
     }
 
     .contacts-section__box{
