@@ -196,7 +196,7 @@ export default function CallCenter() {
                             <div className='col-md-6 col-12 '>
                                 <Form.Group className="mb-3">
                                     <Form.Label>{t('day')}</Form.Label>
-                                    <Form.Control className='rounded-pill py-2' placeholder="DD.MM.YYYY" value={day} onChange={(e) => setDay(e.target.value)} required />
+                                    <Form.Control type='date' className='rounded-pill py-2' placeholder="DD.MM.YYYY" value={day} onChange={(e) => setDay(e.target.value)} required />
                                 </Form.Group>
                             </div>
                             <div className='col-12 '>

@@ -9,28 +9,41 @@ import { useState } from 'react';
 
 function NavbarZamon() {
 
-        const [expended, setExpended] = useState(false);
+    const [expended, setExpended] = useState(false);
 
-    const handleNavClick = () =>{
+    const handleNavClick = () => {
         setExpended(false)
     }
+
+    const [navbar, setNavbar] = useState(false)
+
+    const setNavbarFixed = () => {
+        if (window.scrollY >= 700) {
+            setNavbar(true);
+        } else {
+            setNavbar(false);
+        }
+    };
+
+    window.addEventListener("scroll", setNavbarFixed);
+
 
     const { t, i18n } = useTranslation();
     const language = localStorage.getItem('i18nextLng')
 
-    const handleChange = (e) =>{
+    const handleChange = (e) => {
         e.preventDefault();
 
         const selectedLanguage = e.target.value;
         i18n.changeLanguage(selectedLanguage)
     }
     return (
-        <Navbar expanded={expended} expand="lg" className="navbar-section" onToggle={() =>setExpended(!expended)}>
+        <Navbar expanded={expended} expand="lg" className={`navbar-section ${navbar ? "navbar-active" : ""}`} onToggle={() => setExpended(!expended)}>
             <Container>
                 <Navbar.Brand href="#home">
                     <img src={brand} alt="navbar-img" className='navbar-img' />
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav"  />
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className='z-3 navbar-collapse'>
                     <Nav className="mx-auto" onClick={handleNavClick}>
                         <Nav.Link className='nav-link mx-2' href="#home">{t('home')}</Nav.Link>

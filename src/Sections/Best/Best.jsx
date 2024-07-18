@@ -4,6 +4,7 @@ import SectionHeader from '../../Components/SectionHeader/SectionHeader'
 import { useTranslation } from 'react-i18next'
 
 export default function Best() {
+ 
   const {t} = useTranslation()
   return (
     <div className='container py-5 d-none d-xl-block'>
