@@ -40,3 +40,20 @@
     width: 100vw;
     margin-top: 0;
 }
+
+.offcanves-body{
+   /* background: url(../../Photes/pexels-taryn-elliott-3889987.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover */
+}
+
+.navbar-offcanvas{
+        background-color: #22B3C1;
+}
+
+@media(max-width: 500px){
+    .navbar-img{
+        width: 200px;
+    }
+}
