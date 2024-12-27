@@ -52,8 +52,10 @@
         background-color: #22B3C1;
 }
 
-@media(max-width: 500px){
+@media(max-width: 992px){
     .navbar-img{
         width: 200px;
     }
+
+    .navbar-offcanvas{}
 }

@@ -41,11 +41,11 @@ function NavbarZamon() {
     return (
 
         <Navbar expanded={expended} expand="lg" className={` navbar-section ${navbar ? "navbar-active" : ""}`} onToggle={() => setExpended(!expended)}>
-            <Container >
+            <Container fluid>
                 <Navbar.Brand href="#home">
                     <img src={brand} alt="navbar-img" className='navbar-img' />
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Offcanvas
                     id="offcanvasNavbar-expand-sm"
                     aria-labelledby="offcanvasNavbarLabel"
