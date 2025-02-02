@@ -1,6 +1,6 @@
 # 🌍 Zamon Tour Travel ✈️  
 
-![Zamon Tour Travel](./src/Photes/image.png)  
+[![Zamon Tour Travel](./src/Photos/image.png)](https://travel.suvonov-javohir.uz/)
 
 ## 📌 About the Project  
 **Zamon Tour Travel** is a modern web application designed for travel agencies, allowing users to explore, book, and learn more about various travel packages. Built with **ReactJS**, the platform features a **responsive design** and **multi-language support**, providing an intuitive and seamless user experience.  
